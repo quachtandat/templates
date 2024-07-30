@@ -1,0 +1,465 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Everlane</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-top">
+                <div class="header-top-up">
+                    <span>Get early access on launches and offers.&nbsp;
+                        <a href="">Sign Up For Texts<i class='bx bx-right-arrow-alt'></i></a>&nbsp;
+                    </span>  
+
+                    <div class="header-top-right">
+                            <img src="https://e7.pngegg.com/pngimages/649/983/png-clipart-flag-of-the-united-states-national-flag-flag-of-vietnam-usa-flag-flag-of-america-illustration-blue-angle-thumbnail.png">
+                            &nbsp;USD
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-in">
+            <div class="header-behine">
+                <div class="header-behine-left">
+                    <ul>
+                      <li><a href="#">Women</a></li>
+                      <li><a href="#men"onclick="showSection('men')">Men</a></li>
+                      <li><a href="#about"onclick="showSection('about')">About</a></li>
+                      <li><a href="#">Everworld Stories</a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <svg class="logo" alt="Everlane" viewBox="0 0 432 40.6">
+                        <path d="M0,40.6V0H32.5V8.1H8.1v8.1H24.3v8.2H8.1v8.1H32.5v8.1H0Z"/>
+                        <path d="M67.7,40.6L51.4,0h8.7L71.8,28.9,83.3,0H92L75.8,40.6H67.7Z"/>
+                        <path d="M113.1,40.6V0h32.5V8.1H121.2v8.1h16.2v8.2H121.2v8.1h24.4v8.1H113.1Z"/>
+                        <path d="M199.3,22.8l5.8,17.8h-8.5l-5.3-16.2H177.1V40.6H169V0h24.3A12.16,12.16,0,0,1,202,3.5a11.61,11.61,0,0,1,3.5,8.7A11.68,11.68,0,0,1,199.3,22.8Zm-22.2-6.6h16.2a4,4,0,0,0,2.9-1.2,3.85,3.85,0,0,0,1.2-2.9A4.1,4.1,0,0,0,193.3,8H177.1v8.2Z"/>
+                        <path d="M229.6,40.6V0h8.1V32.5H258v8.1H229.6Z"/>
+                        <path d="M306.8,32.5H290.1l-3.3,8.1h-8.7L294.4,0h8.1l16.3,40.6h-8.7Zm-3.3-8.1-5.1-12.7-5.1,12.7h10.2Z"/>
+                        <path d="M375,0V40.6h-8.1l-20.3-27v27h-8.1V0h8.1l20.3,27V0H375Z"/>
+                        <path d="M399.5,40.6V0H432V8.1H407.6v8.1h16.2v8.2H407.6v8.1H432v8.1H399.5Z"/>
+                    </svg>
+                </div>
+                <div class="icon">
+                    <ul>
+                        <li><a href="#search" onclick="showSection('search')"><img src="/image/magnifying-glass-svgrepo-com.svg" width="40px" height="14px"></a></li> 
+                        <li><img src="/image/user-alt-1-svgrepo-com.svg" width="40px" height="14px"></li>
+                        <li><img src="/image/shopping-cart-02-svgrepo-com.svg" width="40px" height="14px"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-e">
+            <div class="header-up">
+                    <ul>
+                        <li><a href="">Holiday Gifting</a></li>
+                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="">Best-Sellers</a></li>
+                        <li><a href="">Clothing</a></li>
+                        <li><a href="">Tops & Sweaters</a></li>
+                        <li><a href="">Pants & Jeans</a></li>
+                        <li><a href="">Outerwear</a></li>
+                        <li><a href="">Shoes & Bags</a></li>
+                        <li id="sale"><a href="" style="color: red;">Sale</a>
+                            <div class="dropdown-content">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="">HIGHLIGHTS</a></li>
+                                        <li><a href="">Shop All New Arrivals</a></li>
+                                        <li><a href="">The Gift Guide</a></li>
+                                        <li><a href="">New Bottoms</a></li>
+                                        <li><a href="">New Tops</a></li>
+                                        <li><a href="">T-Shirt Bundles</a></li>
+                                        <li><a href="">Under $100</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">FEATURED SHOPS</a></li>
+                                        <li><a href="">The Holiday Outfit Edit</a></li>
+                                        <li><a href="">Giftable Sweaters</a></li>
+                                        <li><a href="">Uniform & Capsule</a></li>
+                                        <li><a href="">The Performance Chino Shop</a></li>
+                                        <li><a href="">Top Rated Men’s Clothing</a></li>
+                                    </ul>
+                                    <div class="featured-item">
+                                        <a href=""><img src="/image/dropdown-1.png"></a> 
+                                    </div>
+                                    <div class="featured-item">
+                                        <a href=""><img src="/image/dropdown-2.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+    <section id="men" class="section active">
+        <div class="wrap">
+            <div class="wrap-1">
+                <section class="section-01">
+                    <section class="section-1">
+                        <section class="section-1-top">
+                            <h2>Your Cozy Era</h2>
+                            <h4>Get peak comfy-chic<br>
+                                with new winter essentials.</h4>
+                        </section>
+                        <a href="" class="main-btn">SHOP NOW</a>
+                    </section>
+                    
+                </section>
+            </div>
+            <div class="wrap-2">
+                <section class="section-02">
+                    <h5>Shop by Categorys</h5>
+            
+                    <div class="products-categorys">
+                        
+                        <div class="product">
+                            <img src="/image/SHIRTS .png">
+                            <a href="">SHIRTS</a>
+                        </div>
+                        <div class="product">
+                            <img src="/image/DENIM.png">
+                            <a href="">DENIM</a>
+                        </div>
+                        <div class="product">
+                            <img src="/image/TEES.png">
+                            <a href="">TEES</a>
+                        </div>
+                        <div class="product">
+                            <img src="/image/PANTS.png">
+                            <a href="">PANTS</a>
+                        </div>
+                        <div class="product">
+                            <img src="/image/SWEATERS.png">
+                            <a href="">SWEATERS</a>
+                        </div>
+                        <div class="product">
+                            <img src="/image/OUTERWEAR.png">
+                            <a href="">OUTERWEAR</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="wrap-3">
+                <section class="section-03">
+                    <section class="section-03-1">
+                        <section class="section-03-l">
+                            <h2>New Arrivals</h2>
+                        </section>
+                        <a href="" class="btn">SHOP THE LATEST</a>
+                    </section>
+            
+                    <section class="section-03-2">
+                        <section class="section-03-in">
+                            <h2>Best-Sellers</h2>
+                        </section>
+                        <a href="" class="btn">SHOP THE LATEST</a>
+                    </section>
+                       
+                    <section class="section-03-3">
+                        <section class="section-03-r">
+                            <h2>The Holiday Outfit</h2>
+                        </section>
+                        <a href="" class="btn">SHOP THE LATEST</a>
+                    </section>  
+                </section>  
+            </div>
+            <div class="wrap-5">
+                <section class="section-05">
+                    <section class="section-05-in">
+                        <section class="section-05-in-1">
+                            <h2>We’re on a Mission To Clean Up the Industry</h2>
+                            <h5>Read about our progress in our latest Impact Report.</h5>
+                        </section>
+                        <a href="" class="btn-05">LEARN MORE</a>
+                    </section>
+                </section>
+            </div>
+            <div class="wrap-4">
+                <section class="section-04">
+                    <h2>Everlane Favorites</h2>  
+                    <p>Beautifully Functional. Purposefully Designed. Consciously Crafted.</p>
+                    <div class="sectiom-04-1">
+                        <button class="prev" onclick="changeSlidesection04(-1)">&#10094;</button>
+                    <div class="section-04-slider">
+                        <div class="section-04-slides">
+                        <div class="section-04-item">
+                            <img src="/image/section-04-1.png" alt="The Waffle Long Sleeve Crew">
+                            <div class="section-04-item-text">
+                            <p>The Waffle Long Sleeve Crew</p>
+                            <p>$60</p>
+                            <a href="">Bone</a>
+                            </div>
+                        </div>
+                        <div class="section-04-item">
+                            <img src="/image/section-04-2.png" alt="The Bomber Jacket | Uniform">
+                            <div class="section-04-item-text">
+                            <p>The Bomber Jacket | Uniform</p>
+                            <p>$148</p>
+                            <a href="">Teasted Coconut</a>
+                            </div>
+                        </div>
+                        <div class="section-04-item">
+                            <img src="/image/section-04-3.png" alt="The Slim Aline Straight Skirt">
+                            <div class="section-04-item-text">
+                            <p>The Slim 4-Way Stretch Organic Jean | Uniform</p>
+                            <p>$98</p>
+                            <a href="">Dark Indigo</a>
+                            </div>
+                        </div>
+                        <div class="section-04-item">
+                            <img src="/image/section-04-4.png" alt="The Essential Organic Crew">
+                            <div class="section-04-item-text">
+                            <p>The Essential Organic Crew</p>
+                            <p>$30</p>
+                            <a href="">Vintage Black</a>
+                            </div>
+                        </div>
+                        <div class="section-04-item">
+                            <img src="/image/section-04-3.png" alt="The Heavyweight">
+                            <div class="section-04-item-text">
+                            <p>The Heavyweight</p>
+                            <p>$100</p>
+                            <a href="">Heathered Brown</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <button class="next" onclick="changeSlidesection04(1)">&#10095;</button> 
+                    </div>
+                     
+                </section>
+            </div>
+            <div class="wrap-6">
+                <section class="section-06">
+                    <button class="prev" onclick="changeSlidesection06(-1)">&#10094;</button>
+                    <div class="section-06-slider">
+                      <div class="section-06-slides">
+                        <div class="section-06-on">
+                          <div class="section-06-on-text">  
+                            <h2>People Are Talking</h2><br>
+                            <p>★★★★★</p>  
+                            <p>"Love this shirt! Fits perfectly and the fabric is thick without being stiff."</p><br>
+                            <a href="" style="text-decoration: none;">-- JonSrf,</a> <a href=""> The Heavyweight Overshirt</a>
+                          </div>  
+                          <div class="section-06-on-image">  
+                            <img src="/image/section-6.png" alt="Mô hình mặc áo sơ mi">  
+                          </div>  
+                        </div>
+                        <!-- Add more .section-06-on divs as needed for more slides -->
+                        <div class="section-06-on">
+                          <div class="section-06-on-text">  
+                            <h2>People Are Talking</h2><br>
+                            <p>★★★★★</p>  
+                            <p>"This is another review text example for the slider."</p><br>
+                            <a href="" style="text-decoration: none;">-- AlexSmith,</a> <a href=""> The Lightweight Jacket</a>
+                          </div>  
+                          <div class="section-06-on-image">  
+                            <img src="/image/section 03-1.png" alt="Mô hình mặc áo sơ mi khác">  
+                          </div>  
+                        </div>
+                      </div>
+                    </div>
+                    <button class="next" onclick="changeSlidesection06(1)">&#10095;</button>
+                  </section>
+                  
+            </div>
+            <div class="wrap-7">
+                <section class="section-07">
+                    <div class="section-07-item"> 
+                        <h2>Our Holiday Gift Picks</h2> <br> 
+                        <img src="/image/section-7-1.png" alt="Hediye Seçenekleri">  
+                        <p>The best presents for everyone on your list.</p>  
+                        <a href="#" >Read More</a>  
+                    </div>  
+                    <div class="section-07-item">  
+                        <h2>Cleaner Fashion</h2> <br>
+                        <img src="/image/section-7-2.png" alt="Daha Temiz Moda">  
+                        <p>See the sustainability efforts behind each of our products.</p>  
+                        <a href="#">Learn More</a>  
+                    </div>  
+                </section>
+            </div>
+            <div class="wrap-8">
+                <section class="section-08">
+                    <div class="slider-container">  
+                        <h2>Everlane On You</h2> <br>
+                        <p>Share your latest look with #EverlaneOnYou for a chance to be featured.</p>  
+                        <a href="">Add Your Photo</a>  
+                    </div>   
+                    <div class="slider">  
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>  
+                        <div class="slides">  
+                            <div class="slide"><a href=""><img src="/image/Frame 14.png" alt="Image 1"></a></div>  
+                            <div class="slide"><a href=""><img src="/image/Frame 20.png" alt="Image 2"></a></div>  
+                            <div class="slide"><a href=""><img src="/image/Frame 21.png" alt="Image 3"></a></div>  
+                            <div class="slide"><a href=""><img src="/image/Frame 19.png" alt="Image 4"></a></div>  
+                            <div class="slide"><a href=""><img src="/image/Frame 22.png" alt="Image 4"></a></div>  
+                            <div class="slide"><a href=""><img src="/image/PANTS.png" alt="Image 4"></a></div>  
+                        </div>  
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>  
+                    </div>  
+                </section>
+            </div>
+            <div class="wrap-9">
+                <section class="section-09">
+                    <div class="item-1">  
+                        <img src="/image/item-1.png">  
+                        <h3>Complimentary Shipping</h3>  
+                        <p>Enjoy free shipping on U.S. orders over<br> $100.</p>  
+                    </div>  
+                    <div class="item-2">  
+                        <img src="/image/item-2.png">
+                        <h3>Consciously Crafted</h3>  
+                        <p>Designed with you and the planet in mind.</p>  
+                    </div>  
+                    <div class="item-3">  
+                        <img src="/image/item-3.png"> 
+                        <h3>Come Say Hi</h3>  
+                        <p>We have 11 stores across the U.S.</p>  
+                    </div>  
+                </section>
+            </div>
+        </div>
+    </section>
+    
+    <section id="search" class="section">
+        <div class="search">
+            <div class="search-container">  
+                <input type="text" placeholder="Search" class="search-input"/>  
+                <a href="#search"><img src="/image/Cancel.png"></a>  
+            </div>  
+              
+            <div class="search-categories">
+                <h2>Popular Categories</h2>
+                <div class="search-categories-li">
+                    <div class="search-category">  
+                        <img src="/image/search-1.png" alt="Dames Sweaters">   
+                        <a href="#search">Women’s Sweaters</a>
+                    </div>  
+                    <div class="search-category">  
+                        <img src="/image/search-2.png" alt="Dames Onderkleding">  
+                        <a href="#search">Women’s Bottom</a>  
+                    </div>  
+                    <div class="search-category">  
+                        <img src="/image/search-3.png" alt="Dames Boots">  
+                        <a href="#search">Women’s Boots</a>  
+                    </div>  
+                    <div class="search-category">  
+                        <img src="/image/search-4.png" alt="Heren Bestsellers">  
+                        <a href="#search">Men’s Best Sellers</a>  
+                    </div> 
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+       <div class="about">
+            <div class="about-1">
+                <div class="about-1-in">
+                    <h2>We believe we can all make a difference.</h2>
+                    <p>Our way: Exceptional quality. Ethical factories. Radical Transparency.</p>
+                </div>
+            </div>
+            <div class="about-2">
+                <div class="about-2-in">
+                    <p>At Everlane, we want the right choice to be as easy as putting on a great T-shirt. That’s why we partner with the best, ethical factories around the world. Source only the finest materials. And share those stories with you—down to the true cost of every product we make. It’s a new way of doing things. We call it Radical Transparency.</p>
+                </div>
+            </div>
+            <div class="about-3">
+                <div class="about-3-l">
+                    <img src="/image/about-2.png" alt="">
+                </div>
+                <div class="about-3-r">
+                    <div class="about-3-r-on">
+                        <p>OUR FACTORIES</p>
+                        <h2>Our ethical approach.</h2>
+                    </div>
+                    <p>We spend months finding the best factories around the world—the same ones that produce your favorite designer labels. We visit them often and build strong personal relationships with the owners. Each factory is given a compliance audit to evaluate factors like fair wages, reasonable hours, and environment. Our goal? A score of 90 or above for every factory.</p>
+                </div>
+            </div>
+            <div class="about-4"></div>
+            <div class="about-5"></div>
+            <div class="about-6"></div>
+            <div class="about-7"></div>
+            <div class="about-8"></div>
+       </div>
+    </section>
+    <footer id ="footer">
+        <div class="footer">
+            <div class="footer-on">
+                <div class="Acount">
+                    <h5>Acount</h5><br>
+                    <ul>
+                        <li><a href="">Log In</a></li>
+                        <li><a href="">Sign Up</a></li>
+                        <li><a href="">Redeem a Gift Card</a></li>
+                    </ul>
+                </div>
+                <div class="Company">
+                    <h5>Company</h5><br>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Environmental<br>Initiatives</a></li>
+                        <li><a href="">Factories</a></li>
+                        <li><a href="">DEI</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">International</a></li>
+                        <li><a href="">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="Get-Help">
+                    <h5>Get Help</h5><br>
+                    <ul>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Return Policy</a></li>
+                        <li><a href="">Shipping Info</a></li>
+                        <li><a href="">Bulk Orders</a></li>
+                    </ul>
+                </div>
+                <div class="Connect">
+                    <h5>Connect</h5><br>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Affiliates</a></li>
+                        <li><a href="">Out Stores</a></li>
+                    </ul>
+                </div>
+                <div class="email">
+                    <from>
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                        <a href=""><i class='bx bxs-right-arrow-square'></i></a>
+                    </from>
+                </div>
+            </div>
+            <div class="footer-down">
+                <div>
+                    <ul>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Do Not Sell or Share My Personal Information</a></li>
+                        <li><a href="">CS Supply Chain Transparency</a></li>
+                        <li><a href="">Vendor Code of Conduct</a></li>
+                        <li><a href="">Sitemap Pages</a></li>
+                        <li><a href="">Sitemap Products</a></li>
+                    </ul>
+                </div>
+                <p>&copy;2023 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
