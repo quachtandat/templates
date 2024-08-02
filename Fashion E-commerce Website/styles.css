@@ -38,7 +38,6 @@ header {
   margin: 0 auto;
   display: block;
   position: relative;
-  height: 142px;
   z-index: 20;
 }
 .header{
@@ -180,12 +179,13 @@ header {
 .icon{
   width: 120px;
   height: 40px;
+
 }
 .icon ul {
   list-style: none;
   display: flex;
   align-items: center;
- 
+  margin-left: -55px;
 }
 .icon ul li {
   padding: 12px 12px;
@@ -229,9 +229,6 @@ header {
   text-decoration: none;
   color: rgba(38, 38, 38, 1);
 }
-
-
-
 
 .dropdown-content {
   display: none;
@@ -1097,91 +1094,6 @@ footer {
   color: rgba(0, 0, 0, 1);
 }
 
-.section-04-item-text {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px; /* Khoảng cách giữa các cột */
-}
-
-.section-04-item-text p {
-  font-family: Maison Neue;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-  color: rgba(38, 38, 38, 1);
-}
-
-.section-04-item img {
-  width: 282px;
-  height: 420px;
-}
-
-.section-04-item-text a {
-  color: rgba(115, 115, 115, 1);
-  font-family: Maison Neue;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: left;
-  text-decoration: none;
-}
-/* slider */
-.sectiom-04-1 {
-  position: relative;
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.section-04-slider {
-  overflow: hidden;
-  width: 100%;
-}
-
-.section-04-slides {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.section-04-item {
-  min-width: 25%; /* 100% / 4 hình */
-  box-sizing: border-box;
-  padding: 20px;
-  text-align: center;
-}
-
-.section-04-item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.section-04-item-text p {
-  margin: 10px 0;
-}
-
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 10;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
 .search{
   position: relative;
   max-width: 1400px;
@@ -1325,22 +1237,1272 @@ footer {
 .about-3{
   width: 100%;
   height: 733px;
+  display:flex;
+  background: rgba(230, 222, 216, 1);
   align-items: center;
-  text-align: center;
-  display:grid;
-  justify-content: space-between;
-  justify-content: center;
 }
-.about-2-in{
-  width: 884px;
-  height: 373px;
+.about-3-l {  
+  flex: 1; /* Cột trái chiếm 1 phần không gian */   
+} 
+.about-3-l img {  
+  width: 100%; /* Hình ảnh chiếm 100% chiều rộng cột */  
+  height: 733px; /* Giữ tỉ lệ của hình ảnh */  
+  object-fit: cover; /* Đảm bảo hình ảnh vừa khung mà không bị biến dạng */  
+}  
+.about-3-r-1{
+  width: 560px;
+  height: 148px;
 }
-.about-2-in p{
+.about-3-r-on h2{
   font-family: Maison Neue;
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 400;
-  line-height: 53.2px;
+  line-height: 48px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.about-3-r-on p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.about-3-r p{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 1.399999976158142px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.about-3-r {  
+  flex: 1; /* Cột phải chiếm 1 phần không gian */  
+  padding: 20px; /* Khoảng cách cho cột */  
+} 
+
+.about-4{
+  width: 100%;
+  height: 637px;
+  background-image: url("/image/about-3.png");
+  background-size: cover;
+}
+
+.about-5{
+  width: 100%;
+  height: 552px;
+  display:flex;
+  background: rgba(230, 222, 216, 1);
+  align-items: center;
+}
+.about-5-l {  
+  flex: 1; /* Cột trái chiếm 1 phần không gian */   
+} 
+.about-5-l img {  
+  width: 100%; /* Hình ảnh chiếm 100% chiều rộng cột */  
+  height: 552px; /* Giữ tỉ lệ của hình ảnh */  
+  object-fit: cover; /* Đảm bảo hình ảnh vừa khung mà không bị biến dạng */  
+}  
+.about-5-r-1{
+  width: 560px;
+  height: 208px;
+  padding: 10px 30px;
+}
+.about-5-r-on h2{
+  font-family: Maison Neue;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;  
+  color: rgba(0, 0, 0, 1);
+}
+.about-5-r-on p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.about-5-r p{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 1.399999976158142px;
+  text-align: left;  
+  color: rgba(0, 0, 0, 1);
+}
+.about-5-r {  
+  flex: 1; /* Cột phải chiếm 1 phần không gian */  
+  padding: 20px; /* Khoảng cách cho cột */  
+} 
+.about-6{
+  width: 100%;
+  height: 560px;
+  background-image: url("/image/about-5.png");
+  background-size: cover;
+}
+
+.about-7{
+  width: 100%;
+  height: 660px;
+  display:flex;
+  align-items: center;
+}
+.about-7-l {  
+  flex: 1; /* Cột trái chiếm 1 phần không gian */   
+} 
+.about-7-l img {  
+  width: 100%; /* Hình ảnh chiếm 100% chiều rộng cột */  
+  height: 660px; /* Giữ tỉ lệ của hình ảnh */  
+  object-fit: cover; /* Đảm bảo hình ảnh vừa khung mà không bị biến dạng */  
+}  
+.about-7-r-1{
+  width: 560px;
+  height: 148px;
+  padding: 10px 30px;
+}
+.about-7-r-on h2{
+  font-family: Maison Neue;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;  
+  color: rgba(0, 0, 0, 1);
+}
+.about-7-r-on p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.about-7-r p{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 1.399999976158142px;
+  text-align: left;  
+  color: rgba(0, 0, 0, 1);
+}
+.about-7-r {  
+  flex: 1; /* Cột phải chiếm 1 phần không gian */  
+  padding: 20px; /* Khoảng cách cho cột */  
+}
+.about-8{
+  width: 100%;
+  height: 453px;
+  padding: 82px 200px;
+  gap:20px
+}
+.about-8 h2{
+  font-family: Maison Neue;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+.about-8-li{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.about-8-item a{
+  text-decoration: none;
+  font-family: Maison Neue;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
   letter-spacing: 0.20000000298023224px;
   text-align: center;
-  color: rgba(0, 0, 0, 1);  
+  color: rgba(76, 76, 75, 1);
+}
+
+.stores{
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto; 
+}
+.stores-text{
+  width:100%;
+  height: 80px;
+  gap: 16px;
+  text-align: center;
+}
+
+.stores-text h2{
+  font-family: Maison Neue;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+.stores-text p{
+  font-family: Maison Neue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.6399999856948853px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+.stores-li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap:30px;
+  padding: 20px 10px;
+}
+.stores-item a{
+  font-family: Maison Neue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.6399999856948853px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+.stores-item p{
+  font-family: Maison Neue;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1); 
+}
+.stores-item img{
+  width: 423.33px;
+  height: 280px; 
+  object-fit: cover;
+}
+
+.blog{
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto; 
+}
+.blog-1{
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding: 0 58px;
+}
+.blog-1-on{
+  width: 100%;
+  height: 14px;
+  background: rgba(38, 38, 38, 1);
+}
+.blog-1-up{
+  width: 100%;
+  height: 243px; 
+}
+.blog-1-up h1{
+  font-family: Maison Neue;
+  font-size: 160px;
+  font-weight: 600;
+  line-height: 176px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.blog-1-up p{
+  font-family: Maison Neue;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.24px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1); 
+}
+
+.blog-2{
+  width: 100%;
+  height: 1683px;
+  padding: 120px 60px ;
+  gap: 12px;
+}
+.blog-2 h2{
+  font-family: Maison Neue;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.blog-2-li{
+  width: 100%;
+  height: 589px;
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-2-item h2{
+  font-family: Maison Neue;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.blog-2-item a{
+  text-decoration: none;
+}
+.blog-2-up{
+  width: 240px;
+  height: 61px;
+  padding: 20px 0px;
+  border-radius: 8px 0px 0px 0px;
+  background: rgba(38, 38, 38, 1);
+  text-align: center;
+  margin: 0 420px;
+}
+.blog-2-up a{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.41999998688697815px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+.blog-3{
+  background-image: url("/image/blog-3.png");
+  width: 100%;
+  height: 225px;
+}
+
+.blog-4{
+  width: 100%;
+  height: 682px;
+  padding: 120px 60px;
+  gap: 12px;
+}
+.blog-4 h1{
+  font-family: Maison Neue;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.blog-4-li{
+  width: 100%;
+  height: 358px;
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-4-item{
+  width: auto;
+  height: 358px;
+  gap: 12px;
+}
+.blog-4-item h2{
+  font-family: Maison Neue;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.blog-4-item a{
+  text-decoration: none;
+}
+
+.blog-5{
+  width: 100%;
+  height: 345px;
+  padding: 90px 60px;
+  gap: 32px;
+  background: rgba(0, 0, 0, 1);
+}
+
+.blog-5 h2{
+  font-family: Maison Neue;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 30px;
+}
+.blog-5-text{
+  width: 240px;
+  height: 61px;
+  padding: 20px 0;
+  gap: 10px;
+  border-radius: 8px 0px 0px 0px;
+  background: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+.blog-5 a{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.41999998688697815px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.blog-post{
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto; 
+}
+.blog-post-1{
+  width: 100%;
+  height: 691px;
+  padding:70px 53px;
+  gap: 10px;
+  background-image: url('/image/blog-post-1.png');
+  background-size:cover ;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+.blog-post-1-text{
+  width: 940px;
+  height: 343px;
+  gap: 10px;
+
+}
+.blog-post-1-text h2{
+  font-family: Maison Neue;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.blog-post-1-text p{
+  font-family: Maison Neue ;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.24px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.blog-post-2{
+  width: 100%;
+  height: 572px;
+  padding: 115px 60px ;
+  gap: 40px;
+}
+.blog-post-2-on{
+  width: 100%;
+  height: 14px;
+  background: rgba(0, 0, 0, 1);
+}
+.blog-post-2-up{
+  width: 100%;
+  height:288px ;
+  display: flex;
+  justify-content: space-between;
+  gap: 150px
+}
+.blog-post-2-up-r p{
+  font-family: Maison Neue;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.blog-post-up-l{
+  display: flex;
+  gap:20px
+}
+.blog-post-up-l img{
+  width: 28px;
+  height: 28px;
+}
+.blog-post-3{
+  width: 100%;
+  height:1254px ;
+  gap: 10px;
+  align-items: center;
+  display:flex;
+  justify-content: center;
+}
+.blog-post-4{
+  width: 100%;
+  height:1131px ;
+  padding: 80px 228px;
+  gap: 44px;
+}
+.blog-post-4-text h2{
+  font-family: Maison Neue;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1); 
+  padding: 20px 0;
+}
+
+.blog-post-4-text p{
+  font-family: Maison Neue;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.24px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.blog-post-4-text a{
+  color: rgba(0, 0, 0, 1);
+}
+.blog-post-8 h2{
+width: 100%;
+font-family: Maison Neue;
+font-size: 40px;
+font-weight: 600;
+line-height: 48px;
+text-align: center;
+color: rgba(0, 0, 0, 1);
+}
+.blog-post-8-slider {
+  position: relative;
+  width: 80%; /* Độ rộng của slider */
+  margin: auto;
+  overflow: hidden;
+}
+
+.blog-post-8-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.blog-post-8-slide {
+  min-width: 25%; /* Chỉ hiển thị 5 hình cùng lúc (100% / 5) */
+  box-sizing: border-box;
+  padding: 0 10px; /* Khoảng cách giữa các tấm hình */
+}
+
+.blog-post-8-slide img {
+  width: 100%;
+  border-radius: 10px; /* Thêm viền bo tròn cho ảnh nếu muốn */
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+.blog-post-8-slide p{
+  float: left;
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color :rgba(38, 38, 38, 1);
+}
+.blog-post-8-slide span{
+  float: right;
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color :rgba(38, 38, 38, 1);
+}
+
+.blog-post-8-slide a{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(115, 115, 115, 1);
+  text-decoration: none;
+  display: block;
+}
+.blog-post-8-btn{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.blog-post-8-btn a{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.41999998688697815px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(38, 38, 38, 1);
+  padding: 20px 100px;
+  text-decoration: none;
+}
+.category{
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto; 
+  display: flex;
+  gap:20px;
+  padding: 20px 50px;
+}
+.category-l{
+  width:100%;
+}
+.category-l-tittle{
+  width: 196px;
+  height: 48px;
+  padding: 16px 0px;
+  gap: 10px;
+  border: 0px 0px 1px 0px;
+  border-bottom: 1px solid rgba(221, 219, 220, 1)  
+}
+.category-l-tittle p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.category-l-on-text a{
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between; 
+  text-decoration: none;
+  color: rgba(38, 38, 38, 1);
+}
+.category-l-on-text a h2{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.41999998688697815px;
+  text-align: left;
+}
+.category-list{
+  list-style: none;
+}
+.category-list ul{
+  list-style: none;
+}
+.category-list li{
+  display: flex;
+  padding: 10px 0 0 0;
+  align-items: flex-start;
+  text-align: center;
+}
+.category-list li p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.category-l-on ul li ul{
+  display: block;
+}
+.category-list.block ul{
+  display: none;
+}
+.category-list ul p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(76, 76, 75, 1);
+}
+.category-l-in{
+  border-top: 1px solid rgba(221, 219, 220, 1)
+}
+.category-l-in ul{
+  list-style: none;
+}
+.category-list-in ul{
+  display: grid;  
+  grid-template-columns: repeat(3, 1fr);  
+  list-style-type: none;
+  padding: 10px 0; 
+}
+.category-list-in ul li{
+  margin-bottom: 10px;
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color:rgba(0, 0, 0, 1);
+}
+.category-list-in ul img {  
+  vertical-align: middle; /* Căn giữa ảnh với văn bản */  
+  margin-right: 20px; /* Khoảng cách giữa ảnh và tên màu */  
+} 
+.category-l-in ul li ul{
+  display: grid;
+}
+.category-list-in.block ul{
+  display: none;
+}
+.category-list-in ul p{
+  font-family: Maison Neue;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(76, 76, 75, 1);
+}
+.category-l-up{
+  border-top: 1px solid rgba(221, 219, 220, 1)
+}
+.category-l-up ul{
+  list-style: none;
+}
+.category-list-up ul li ul{
+  display: grid;  
+  grid-template-columns: repeat(4, 1fr);  
+  list-style-type: none;
+  padding: 10px 0; 
+}
+.category-list-up ul li{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(76, 76, 75, 1);
+}
+.category-list-up ul li ul img {  
+  vertical-align: middle; /* Căn giữa ảnh với văn bản */  
+  margin-right: 20px; 
+  margin-bottom: 20px; 
+} 
+.category-l-up ul li ul{
+  display: grid;
+}
+.category-list-up.block ul{
+  display: none;
+}
+.category-r{
+  width: 100%;
+}
+.category-r-title{
+  width: 100%;
+  padding: 16px 0px ;
+}
+
+.category-r-title p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(115, 115, 115, 1);
+}
+.category-r-title h2{
+  font-family: Maison Neue;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.category-r-title h5{
+  font-family: Maison Neue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.6399999856948853px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.category-r-li{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.category-r-li-item {
+  width: 316px;
+  padding: 20px 5px;
+  position: relative;
+}
+.category-r-li-item img {
+  width: 329px;
+  height: 392px;
+}
+.category-r-li-item-tilte{
+  display: flex;
+  justify-content: space-between;
+}
+.category-r-li-item-tilte p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(38, 38, 38, 1);
+  padding: 5px 0;
+}
+.category-r-li-item-tilte-price{
+  display: flex;
+}
+.category-r-li-item-tilte-price del{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: right;
+  color: rgba(115, 115, 115, 1);
+  padding: 5px 0;
+}
+.category-r-li-item-tilte-price p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: right;
+  color: rgba(38, 38, 38, 1);
+}
+.category-r-li-item-color{
+  padding: 5px 0;
+}
+.category-r-li-item-colors{
+  padding: 5px 0;
+}
+.category-r-li-item-color p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(115, 115, 115, 1);
+}
+.category-r-li-item-colors ul li img{
+  width: 20px;
+  height: 20px;
+  padding: 2px 2px;
+}
+.category-r-li-item-colors ul li{
+  list-style: none;
+  display: flex;
+}
+.category-r-li-item-discount{
+  width: 59px;
+  height: 24px;
+  padding: 4px 6px ;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+.category-r-li-item-discount p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: rgba(208, 2, 27, 1);
+}
+.category-r-li-item-text-2{
+  width: 112px;
+  height: 28px;
+  border: 1px solid rgba(221, 219, 220, 1);
+  align-items: center;
+  padding: 6px 2px;
+}
+.category-r-li-item-text-2 p{
+  font-family: Maison Neue;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgba(115, 115, 115, 1);
+}
+.category-r-li-item-text-3{
+  display: flex;
+  gap:5px;
+}
+.category-r-li-item-text-3-in {
+  width: 125px;
+  height: 28px;
+  padding: 6px 0px ;
+  gap: 10px;
+  border: 1px solid rgba(221, 219, 220, 1);
+}
+.category-r-li-item-text-3-in p{
+  font-family: Maison Neue;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgba(115, 115, 115, 1);
+}
+.category-r-li-item a{
+  text-decoration: none;
+}
+.product-detail{
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto; 
+}
+.product-detail-1{
+  width: 100%;
+  padding: 30px 60px;
+  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.product-detail-1-l{
+  width:832px;
+  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.product-detail-1-l-item{
+  width: 412px;
+  height: 508px;
+  position: relative;
+}
+.product-detail-1-l-item{
+  width: 412px;
+  height: 508px;
+}
+.product-detail-1-r{
+  width: 100%;
+  gap: 1px;
+}
+.product-detail-1-r{
+  width:100%;
+  gap: 1px;
+}
+.product-detail-1-r-1{
+  width:100%;
+  padding: 0px 0px 16px 0px;
+  gap: 4px;
+  border: 0px 0px 1px 0px;
+  border-bottom: 1px solid rgba(245, 244, 244, 1);
+}
+.product-detail-1-r-1 p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: rgba(115, 115, 115, 1);
+}
+.product-detail-1-r-1-in{
+  width: 100%;
+  gap: 5px;
+}
+.product-detail-1-r-1-in-text {
+  display: flex;
+  width: 100%;
+}
+.product-detail-1-r-1-in-text h2{
+  font-family: Maison Neue;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.24px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.product-detail-1-r-1-in-price{
+  display: flex;
+}
+.product-detail-1-r-1-in-price del{
+  font-family: Maison Neue;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.24px;
+  text-align: left;
+  color: rgba(115, 115, 115, 1);
+}
+.product-detail-1-r-1-in-price p{
+  font-family: Maison Neue;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.24px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.product-detail-1-r-1-in-rate{
+   display: flex; 
+}
+.product-detail-1-r-1-in-rate p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(115, 115, 115, 1);
+}
+.product-detail-1-r-2{
+  display: flex;
+  gap:12px;
+}
+.product-detail-1-r-2 h2{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.product-detail-1-r-2 p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.product-detail-1-r-3-text {
+  display: flex;
+  justify-content: space-between;
+}
+.product-detail-1-r-3-text h2{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:  rgba(0, 0, 0, 1);
+}
+.product-detail-1-r-3-text a{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(38, 38, 38, 1);
+}
+.product-detail-1-r-3-size{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+}
+.product-detail-1-r-3{
+  padding: 20px 0;
+}
+.product-detail-1-r-4{
+  width: 100%;
+  height: 41px;
+  padding: 10px 0px;
+  text-align: center;
+  background: rgba(38, 38, 38, 1);
+  text-align: center;
+  margin-top: 20px;
+}
+.product-detail-1-r-4 a{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 1.399999976158142px;
+  text-align: center;
+  color:rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+.product-detail-1-r-5{
+  border-top: 1px solid rgba(221, 219, 220, 1);
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.product-detail-1-r-5-1{
+  display: flex;
+  gap:20px;
+  padding: 20px 0;
+}
+.product-detail-1-r-5-1-text h2{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.41999998688697815px;
+  text-align: left; 
+  color:rgba(0, 0, 0, 1); 
+}
+.product-detail-1-r-5-1-text a{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1); 
+}
+.product-detail-1-r-5-1-text p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1); 
+}
+.product-detail-1-r-6{
+  padding: 20px 0;
+  border-top: 1px solid rgba(221, 219, 220, 1);
+}
+.product-detail-1-r-6 h2{
+  font-family: Maison Neue;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.product-detail-1-r-6 p{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 1.399999976158142px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+  padding: 20px 0;
+}
+.product-detail-1-r-7{
+  display: flex;
+  border-bottom: 1px solid rgba(221, 219, 220, 1);
+  padding: 20px 0;
+  gap: 20px;
+}
+.product-detail-1-r-7 h2{
+  font-family: Maison Neue;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.product-detail-1-r-7 p{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 1.399999976158142px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.product-detail-1-r-8{
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(221, 219, 220, 1)
+}
+.product-detail-1-r-8 h2{
+  font-family: Maison Neue;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.product-detail-2{
+  width: 100%;
+  padding: 64px 170px;
+}
+.product-detail-2-li{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.product-detail-2 h2{
+  font-family: Maison Neue;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(38, 38, 38, 1);
+}
+.product-detail-3{
+  width: 100%;
+  padding: 0 196px;
+  gap:40px;
+}
+.product-detail-3 h2{
+  font-family: Maison Neue;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.24px;
+  text-align: center;
+  color:rgba(38, 38, 38, 1);
+}
+.product-detail-3-up{
+  background: rgba(245, 244, 244, 1);
+  width: 100%;
+  padding: 36px 56px;
+  display: flex;
+  justify-content: space-between;
+}
+.product-detail-3-up-l{
+  background: rgba(245, 244, 244, 1);
+  width: 262px;
+}
+.product-detail-3-up-l h2{
+  font-family: Maison Neue;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(38, 38, 38, 1);
+}
+.product-detail-3-up-l-rate{
+  display: flex;
 }

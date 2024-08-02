@@ -1,3 +1,24 @@
+const itensiderbar = document.querySelectorAll(".category-list")
+itensiderbar.forEach(function(menu, Index){
+    menu.addEventListener("click",function(){
+    menu.classList.toggle ("block");
+})
+})
+
+const color = document.querySelectorAll(".category-list-in")
+color.forEach(function(menu, Index){
+    menu.addEventListener("click",function(){
+    menu.classList.toggle ("block");
+})
+})
+
+const size = document.querySelectorAll(".category-list-up")
+size.forEach(function(menu, Index){
+    menu.addEventListener("click",function(){
+    menu.classList.toggle ("block");
+})
+})
+
 // Lấy tất cả các li
 const lis = document.querySelectorAll('.header-behine-left ul li');
 
@@ -12,89 +33,7 @@ lis.forEach((li) => {
     li.classList.add('active');
   });
 });
-// Slider
-let currentSlide = 0;
 
-function changeSlide(direction) {
-  const slides = document.querySelector('.slides');
-  const totalSlides = document.querySelectorAll('.slide').length;
-  const slidesToShow = 5;
-
-  currentSlide += direction;
-
-  if (currentSlide < 0) {
-    currentSlide = totalSlides - slidesToShow;
-  }
-
-  if (currentSlide > totalSlides - slidesToShow) {
-    currentSlide = 0;
-  }
-
-  const offset = -(currentSlide * (100 / slidesToShow));
-  slides.style.transform = `translateX(${offset}%)`;
-}
-//slider 06
-let currentSlidesection06 = 0;
-
-function changeSlidesection06(direction) {
-  const slides = document.querySelector('.section-06-slides');
-  const totalSlides = document.querySelectorAll('.section-06-on').length;
-
-  currentSlidesection06 += direction;
-
-  if (currentSlidesection06 < 0) {
-    currentSlidesection06 = totalSlides - 1;
-  }
-
-  if (currentSlidesection06 >= totalSlides) {
-    currentSlidesection06 = 0;
-  }
-
-  const offset = -(currentSlidesection06 * 100);
-  slides.style.transform = `translateX(${offset}%)`;
-}
-// Slider
-let currentSlide1 = 0;
-
-function changeSlidesection4(direction) {
-  const slides = document.querySelector('.blog-post-8-slides');
-  const totalSlides = document.querySelectorAll('.blog-post-8-slide').length;
-  const slidesToShow = 4;
-
-  currentSlide1 += direction;
-
-  if (currentSlide1 < 0) {
-    currentSlide1 = totalSlides - slidesToShow;
-  }
-
-  if (currentSlide1 > totalSlides - slidesToShow) {
-    currentSlide1 = 0;
-  }
-
-  const offset = -(currentSlide1 * (100 / slidesToShow));
-  slides.style.transform = `translateX(${offset}%)`;
-}
-// // chuyển section
-// function showSection(sectionId) {  
-//   // Ẩn tất cả các section  
-//   const sections = document.querySelectorAll('.section');  
-//   sections.forEach(section => {  
-//       section.classList.remove('active'); // Loại bỏ lớp active  
-//   });  
-
-//   // Hiển thị section được chọn  
-//   const activeSection = document.getElementById(sectionId);  
-//   activeSection.classList.add('active'); // Thêm lớp active cho section được chọn  
-
-//   // Ẩn hoặc hiện footer dựa trên section hiện tại  
-//   const footer = document.getElementById('footer');  
-//   if (sectionId === 'search') {  
-//       footer.style.display = 'none'; // Ẩn footer trong Section 3  
-//   } else {  
-//       footer.style.display = 'block'; // Hiện footer ở các section còn lại  
-//   }  
-
-// }
 
 function showSection(sectionId) {
   // Ẩn tất cả các section
@@ -127,14 +66,3 @@ function showSection(sectionId) {
  
   history.pushState(null, null, '#' + sectionId);
 }
-
-document.addEventListener('DOMContentLoaded', function() {  
-  const hash = window.location.hash.substring(1);  
-  if (hash) {  
-      showSection(hash);  
-  } else {  
-      showSection('men'); // Hiển thị phần Men mặc định  
-  }  
-});  
-
- 
