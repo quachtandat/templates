@@ -66,3 +66,37 @@ function showSection(sectionId) {
  
   history.pushState(null, null, '#' + sectionId);
 }
+
+document.querySelectorAll('.plus').forEach(button => {  
+  button.addEventListener('click', () => {  
+      const quantityElement = button.nextElementSibling; // Sửa lại để chọn đúng phần tử  
+      quantityElement.textContent = parseInt(quantityElement.textContent) + 1;  
+      updateSubtotal(); // Đảm bảo hàm này đã được định nghĩa  
+  });  
+});  
+
+document.querySelectorAll('.minus').forEach(button => {  
+  button.addEventListener('click', () => {  
+      const quantityElement = button.previousElementSibling; // Sửa lại để chọn đúng phần tử  
+      if (parseInt(quantityElement.textContent) > 1) {  
+          quantityElement.textContent = parseInt(quantityElement.textContent) - 1;  
+          updateSubtotal(); // Đảm bảo hàm này đã được định nghĩa  
+      }  
+  });  
+}); 
+
+// Lấy các phần tử cần thiết  
+const openCartButton = document.querySelector(".icon-cart");  
+const cartSection = document.getElementById("cart");  
+const closeCartButton = document.querySelector(".icon-close");  
+
+// Mở giỏ hàng  
+openCartButton.addEventListener("click", function() {  
+  console.log("openCartButton")
+    cartSection.classList.add("active"); // Xóa lớp 'hidden' để hiển thị giỏ hàng  
+});  
+
+// Đóng giỏ hàng  
+closeCartButton.addEventListener("click", function() {  
+    cartSection.classList.remove("active"); // Thêm lớp 'hidden' để ẩn giỏ hàng  
+});

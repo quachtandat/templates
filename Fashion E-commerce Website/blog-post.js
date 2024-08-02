@@ -34,3 +34,19 @@ lis.forEach((li) => {
     li.classList.add('active');
   });
 });
+
+// Lấy các phần tử cần thiết  
+const openCartButton = document.querySelector(".icon-cart");  
+const cartSection = document.getElementById("cart");  
+const closeCartButton = document.querySelector(".icon-close");  
+
+// Mở giỏ hàng  
+openCartButton.addEventListener("click", function() {  
+  console.log("openCartButton")
+    cartSection.classList.add("active"); // Xóa lớp 'hidden' để hiển thị giỏ hàng  
+});  
+
+// Đóng giỏ hàng  
+closeCartButton.addEventListener("click", function() {  
+    cartSection.classList.remove("active"); // Thêm lớp 'hidden' để ẩn giỏ hàng  
+});

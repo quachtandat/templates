@@ -2472,8 +2472,7 @@ color: rgba(0, 0, 0, 1);
 }
 .product-detail-3{
   width: 100%;
-  padding: 0 196px;
-  gap:40px;
+  padding: 0 165px ;
 }
 .product-detail-3 h2{
   font-family: Maison Neue;
@@ -2484,9 +2483,10 @@ color: rgba(0, 0, 0, 1);
   color:rgba(38, 38, 38, 1);
 }
 .product-detail-3-up{
+  margin-top: 50px;
   background: rgba(245, 244, 244, 1);
   width: 100%;
-  padding: 36px 56px;
+  padding: 36px 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -2505,4 +2505,394 @@ color: rgba(0, 0, 0, 1);
 }
 .product-detail-3-up-l-rate{
   display: flex;
+}
+.product-detail-3-in-b{
+  width: 262px;
+  gap: 8px;
+}
+.product-detail-3-in-b-in{
+  display: flex;
+  justify-items: center;
+  text-align: center;
+}
+.product-detail-3-in-b p{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: rgba(115, 115, 115, 1);
+}
+.rectangle{
+  background-color: rgba(38, 38, 38, 1);
+  width: 200px;
+  height: 6px;
+  margin-top: 4px;
+}
+.rectangle1{
+  background-color: rgba(221, 219, 220, 1);
+  width: 200px;
+  height: 6px;
+  margin-top: 4px;
+}
+.product-detail-3-in-r{
+  width: 262px;
+  height: 72px;
+}
+.product-detail-3-in-r h2{
+  font-family: Maison Neue;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(38, 38, 38, 1);
+}
+.product-detail-3-in-r-item{
+  display: flex;
+  gap:5px;
+}
+.rectangle2{
+  width: 49.2px;
+  height: 8px;
+  background: rgba(221, 219, 220, 1);
+}
+.rectangle3{
+  width: 49.2px;
+  height: 8px;
+  background: rgba(38, 38, 38, 1);
+}
+.product-detail-3-down-in{
+  border-bottom: 1px solid rgba(221, 219, 220, 1);
+  margin-bottom: 20px;
+}
+
+.product-detail-3-in-r-up{
+  display: flex;
+  justify-content: space-between;
+}
+.product-detail-3-in-r-up{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(38, 38, 38, 1);
+}
+.product-detail-3-menu{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.product-detail-3-menu-title{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(221, 219, 220, 1);
+  padding: 16px;
+  width: 240px;
+  text-align: center;
+  align-items: center;
+}
+.product-detail-3-menu-title-text h2{
+  font-family: Maison Neue;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.24px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.product-detail-3-menu-title-text h2{
+  font-family: Maison Neue;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.24px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.product-detail-3-menu-title-text p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(115, 115, 115, 1);
+}
+.product-detail-3-down-in{
+  display: flex;
+  gap:5px;
+  padding-bottom: 57px;
+}
+.product-detail-3-down-l{
+  width: 230px;
+  margin-top: 20px;
+}
+.product-detail-3-down-l h2{
+  font-family: Maison Neue;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.product-detail-3-down-l-1{
+  display: flex;
+}
+.product-detail-3-down-l-1 p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(38, 38, 38, 1);
+}
+.product-detail-3-down-l-1 h5{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(38, 38, 38, 1);
+}
+.product-detail-3-down-l-2{
+  padding: 20px 0;
+}
+.product-detail-3-down-r{
+  display: flex;
+  margin-top: 20px;
+}
+.product-detail-3-down-r-in{
+  width: 600px;
+}
+.product-detail-3-down-r-in h2{
+  font-family: Maison Neue;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.product-detail-3-down-r-in p{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 1.399999976158142px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+.product-detail-3-down-r p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color:rgba(115, 115, 115, 1);
+}
+.product-detail-3-down-in-1{
+  display: flex;
+  margin-bottom: 20px;
+}
+.product-detail-4{
+  width: 100%;
+  padding: 80px 295px ;
+  gap: 16px;
+}
+.product-detail-4 h2{
+  font-family: Maison Neue;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.24px;
+  text-align: center;
+  color:rgba(38, 38, 38, 1);
+  padding: 10px 0;
+}
+.product-detail-4 p{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 1.399999976158142px;
+  text-align: center;
+  color:rgba(38, 38, 38, 1);
+}
+.product-detail-4-up{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.product-detail-4-up p{
+  font-family: Maison Neue;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color:rgba(38, 38, 38, 1);
+}
+
+
+/*------------------------------------*/
+.items-cart_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 985px;
+  max-width: 447px;
+  background: rgba(255, 255, 255, 1);
+  z-index: 30;
+  padding: 50px 10px;
+}
+.items-cart_container .cart-item {
+  position: relative;
+  margin: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.items-cart_container .cart-item .bxs-trash {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.content {
+  height: 100px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.content span {
+  color: #737373;
+}
+.price {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.price p {
+  font-weight: 700;
+  display: flex;
+  align-items: end;
+}
+.price del {
+  font-weight: normal;
+  color: #737373;
+}
+.price button {
+  width: 81px;
+  height: 41px;
+  background: #262626;
+  color: #fff;
+}
+.content .sale {
+  color: red;
+}
+
+.cart-item_bf {
+  border: 1px solid #737373;
+  position: relative;
+  margin: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+}
+.item-quantity {
+  display: flex;
+  align-items: center;
+}
+
+.sumary {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid;
+  margin-top: 294px;
+  padding: 10px 0;
+}
+.sumary-tile {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+}
+
+.sumary-tile h3,
+p {
+  font-weight: 600;
+}
+.sumary-tile span {
+  font-weight: normal;
+}
+.sumary-tile strong {
+  font-weight: 600;
+}
+.sumary button {
+  background-color: black;
+  color: white;
+  width: 400px;
+  height: 41px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 30px auto;
+}
+.items-cart_container h2{
+  font-family: Maison Neue;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.24px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.cart-item h3{
+  font-family: Maison Neue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 1.399999976158142px;
+  text-align: left;
+  color:rgba(0, 0, 0, 1);
+}
+
+.operation {  
+  display: flex;  
+  align-items: center;  
+  text-align: center;
+  gap:5px;
+} 
+.operation button{
+  width: 30px;
+  height: 20px;
+  background-color: rgb(145, 137, 137);
+  text-align: center;
+  color: black;
+}
+
+#cart-item-trash{
+  cursor: pointer;
+}
+.icon-close{
+  position: absolute;
+  top:20px;
+  right: 10px;
+
+  cursor: pointer;
+}
+.icon-cart{
+  cursor: pointer;
 }
