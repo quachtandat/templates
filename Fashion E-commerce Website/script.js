@@ -75,26 +75,6 @@ function changeSlidesection4(direction) {
   slides.style.transform = `translateX(${offset}%)`;
 }
 // // chuyển section
-// function showSection(sectionId) {  
-//   // Ẩn tất cả các section  
-//   const sections = document.querySelectorAll('.section');  
-//   sections.forEach(section => {  
-//       section.classList.remove('active'); // Loại bỏ lớp active  
-//   });  
-
-//   // Hiển thị section được chọn  
-//   const activeSection = document.getElementById(sectionId);  
-//   activeSection.classList.add('active'); // Thêm lớp active cho section được chọn  
-
-//   // Ẩn hoặc hiện footer dựa trên section hiện tại  
-//   const footer = document.getElementById('footer');  
-//   if (sectionId === 'search') {  
-//       footer.style.display = 'none'; // Ẩn footer trong Section 3  
-//   } else {  
-//       footer.style.display = 'block'; // Hiện footer ở các section còn lại  
-//   }  
-
-// }
 
 function showSection(sectionId) {
   // Ẩn tất cả các section
